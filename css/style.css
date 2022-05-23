@@ -1,31 +1,46 @@
-.body {
- font-family: "Roboto" sans-serif;
- color: #212121;
+.root {
+    --main-title-color:#212121;
+    --two-title-color:#FFFFFF;
+    --main-btn-color:#FFFFFF;
 }
+.body {
+ font-family: "Roboto", sans-serif;
+ letter-spacing: 0.03em;
+ font-weight: 400;
+ background-color: var(--main-btn-color);
+ }
+
 .main-effect {
     background-color: #2F303A;
 }
-
+.type-cursor{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color:#FFFFFF;
+}
 .header{
-    background: #FFFFFFf;
+    background: var(--main-btn-color);
     list-style-type: none;
     text-decoration: none;
 }
 .link{
     text-decoration: none;
+    font-family:'Raleway',sans-serif;
 }
 .logo {
-    font-family:'Raleway'; 
+    font-family:'Raleway', sans-serif;
     font-weight:700;
     font-size: 26px;
     line-height: 1.19; 
+    color: #2196F3;
 }
 
 .logo-two {
     color: black;
 }
 .logo-thre{
-    color: #FFFFFF;;
+    color:#FFFFFF;
 }
 .list{
     font-weight: 500;
@@ -39,7 +54,7 @@
    
  }
 .list-cont{
-    color: #212121;
+    color:var(--main-title-color);
 
 }
 .list-tel {
@@ -72,19 +87,17 @@
 .main-btn {
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
     background: #2196F3;
-    color: #FFFFFF;;
 } 
 
 .type-name {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
-    color: #212121;;
+    line-height: 1.71;
+    color: var(--main-title-color);
 }
 .type-text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: #757575;
@@ -92,8 +105,8 @@
 .task,  .comand {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.17x;
-    color: #212121;
+    line-height: 1.17;
+    color: var(--main-title-color);
 }
 .comand {
     background-color: #F5F4FA;
@@ -103,7 +116,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    color: #212121;
+    color: var(--main-title-color);
 }
 .comand-position {
     font-size: 16px;
@@ -114,6 +127,7 @@
     text-decoration: none;
     list-style: none;
 }
-.cont-link:hover{
+.cont-link:hover ,
+.cont-link:focus{
     color: brown;
 }
