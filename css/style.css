@@ -1,64 +1,61 @@
-.root {
+
+:root {
     --main-title-color:#212121;
     --two-title-color:#FFFFFF;
     --main-btn-color:#FFFFFF;
-}
+    --accent-color:#2196F3;
+    --primary-text-color:#757575;
+    }
 .body {
  font-family: "Roboto", sans-serif;
  letter-spacing: 0.03em;
  font-weight: 400;
+ color: var(--main-title-color);
  background-color: var(--main-btn-color);
  }
 
-.main-effect {
-    background-color: #2F303A;
-}
-.type-cursor{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    color:#FFFFFF;
-}
 .header{
     background: var(--main-btn-color);
     list-style-type: none;
-    text-decoration: none;
 }
 .link{
-    text-decoration: none;
-    font-family:'Raleway',sans-serif;
+    text-decoration: none;   
 }
 .logo {
     font-family:'Raleway', sans-serif;
     font-weight:700;
     font-size: 26px;
     line-height: 1.19; 
-    color: #2196F3;
+    color: var(--accent-color);
 }
-
 .logo-two {
     color: black;
 }
 .logo-thre{
-    color:#FFFFFF;
+    color:var(--two-title-color);
 }
+
 .list{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
     list-style: none;
+    
 }
-.list-stud{
-    color: #2196F3;
-   
- }
 .list-cont{
     color:var(--main-title-color);
-
 }
+
+/*сыслку делаем синей и основной*/
+.list-cont:hover,
+.list-cont:focus,
+.current {
+    color: var(--accent-color);
+}
+
 .list-tel {
-    color:#757575 ;
+    color:var(--primary-text-color) ;
    
 }
 .list-item{
@@ -76,19 +73,33 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-  }
+}
 
+.main-effect {
+    background-color: #2F303A;
+}
 .main-head{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    color: #FFFFFF;
+    color: var(--two-title-color);
 }
 .main-btn {
     width: 200px;
     height: 50px;
-    background: #2196F3;
+    background: var(--accent-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color:var(--two-title-color);
 } 
+
+.cursor:hover
+.cursor:focus {
+    box-shadow: 0px 4px 4px 0px #00000026;
+}
+
 
 .type-name {
     font-weight: 700;
@@ -100,7 +111,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 .task,  .comand {
     font-weight: 700;
@@ -121,7 +132,7 @@
 .comand-position {
     font-size: 16px;
     line-height: 1.18;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 .non-decor{
     text-decoration: none;
@@ -130,4 +141,35 @@
 .cont-link:hover ,
 .cont-link:focus{
     color: brown;
+}
+.button {cursor: pointer;}
+/*.name-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--main-title-color);
+}*/
+.name-add{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-text-color);
+}
+.name-work{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    color: var(--main-title-color);
+}
+.name-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--main-title-color);
+    cursor: pointer;
+    background-color: #F5F4FA;
+}
+.name-button:hover,
+.name-button:focus {
+background-color: #2196F3;
 }
