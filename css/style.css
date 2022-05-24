@@ -143,12 +143,8 @@
     color: brown;
 }
 .button {cursor: pointer;}
-/*.name-button{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    color: var(--main-title-color);
-}*/
+
+
 .name-add{
     font-weight: 400;
     font-size: 16px;
